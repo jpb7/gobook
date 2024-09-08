@@ -4,17 +4,15 @@
 // See page 8.
 
 // Echo3 prints its command-line arguments.
-package main
+package echo3
 
 import (
 	"fmt"
-	"os"
 	"strings"
 )
 
-//!+
-func main() {
-	fmt.Println(strings.Join(os.Args[1:], " "))
+func Echo3(args []string) {
+	fmt.Println(strings.Join(args, " "))
 }
 
 //!-

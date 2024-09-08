@@ -5,20 +5,20 @@
 //!+
 
 // Echo1 prints its command-line arguments.
-package main
+package echo1
 
 import (
 	"fmt"
 	"os"
 )
 
-func main() {
+func Echo1(args []string) {
 	var s, sep string
-	for i := 1; i < len(os.Args); i++ {
-		s += sep + os.Args[i]
+	for i := 1; i < len(args); i++ {
+		s += sep + args[i]
 		sep = " "
 	}
-	fmt.Println(s)
+	fmt.Println(os.Args)
 }
 
 //!-
