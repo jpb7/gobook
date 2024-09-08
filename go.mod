@@ -1,4 +1,4 @@
-module gopl.io
+module gobook
 
 go 1.16
 
